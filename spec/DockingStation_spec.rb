@@ -23,8 +23,8 @@ describe DockingStation do
 
 			it 'expects bike to be working in release_bike' do
 				# bike = Bike.new
-				bike = double("bike", :broken? => nil)
-				expect(bike.broken?).to be nil
+				bike = double("bike", :broken? => false)
+				expect(bike.broken?).to be false
 			end
 			# let(:docking_station) { double :DockingStation }
 			it "Does not release the bike if the bike is broken" do
